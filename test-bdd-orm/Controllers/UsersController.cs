@@ -8,7 +8,7 @@ namespace Services
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly UserService _userService;
+        /*private readonly UserService _userService;
 
         public UserController(UserService userService)
         {
@@ -23,10 +23,10 @@ namespace Services
 
             var newUser = await _userService.AddUserAsync(user);
             return Ok(newUser);
-        }*/
+        }
         public async Task<IActionResult> GetAllUsers(){
             var users = await _userService.GetAllUsersAsync();
             return Ok(users);
-        }
+        }*/
     }
 }

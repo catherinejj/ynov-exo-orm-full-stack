@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace test_bdd_orm.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250305081809_FixProductsTable")]
-    partial class FixProductsTable
+    [Migration("20250306090316_AddUserAndProducts")]
+    partial class AddUserAndProducts
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

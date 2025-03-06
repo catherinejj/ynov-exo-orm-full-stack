@@ -7,13 +7,14 @@ namespace EntityFramework;
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }
 
-        public DbSet<Product> Products { get; set; }
-        public DbSet<User> Users { get; set; }
+    public DbSet<Product> Products { get; set; }
+    
+    public DbSet<User> Users { get; set; }
 
-        public DbSet<Post> Posts { get; set; }
+     public DbSet<Post> Posts { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-        }
-    }
+     protected override void OnModelCreating(ModelBuilder builder)
+     {
+         builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+     }
+}

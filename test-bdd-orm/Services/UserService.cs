@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class UserService
+    /*public class UserService
     {
         private readonly ApplicationDbContext _context;
 
@@ -25,5 +25,5 @@ namespace Services
                 return await _context.Users.ToListAsync();
         }
         
-    }
+    }*/
 }

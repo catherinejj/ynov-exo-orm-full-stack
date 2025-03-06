@@ -5,7 +5,7 @@
 namespace test_bdd_orm.Migrations
 {
     /// <inheritdoc />
-    public partial class FixProductsTable : Migration
+    public partial class AddUserAndProducts : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
